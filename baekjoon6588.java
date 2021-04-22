@@ -9,9 +9,9 @@ public class baekjoon6588 {
 		boolean[] arr = new boolean[1000001];
 		arr[0] = true;
 		arr[1] = true;
-		for (int i = 2; i < 1000001; i++) {
+		for (int i = 2; i * i < 1000001; i++) {
 			if (!arr[i]) {
-				for (int j = i * 2; j < 1000001; j += i) {
+				for (int j = i * i; j < 1000001; j += i) {
 					arr[j] = true;
 				}
 			}
