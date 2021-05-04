@@ -21,7 +21,7 @@ public class baekjoon1920 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		A=new int[n];
+		A = new int[n];
 		for (int i = 0; i < n; i++)
 			A[i] = sc.nextInt();
 		Arrays.sort(A);
@@ -33,5 +33,6 @@ public class baekjoon1920 {
 			x = sc.nextInt();
 			System.out.println(bs(0, A.length, x));
 		}
+		sc.close();
 	}
 }
