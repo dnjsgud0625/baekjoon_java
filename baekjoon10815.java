@@ -20,7 +20,7 @@ public class baekjoon10815 {
 		int m = Integer.parseInt(in.readLine());
 		StringTokenizer x = new StringTokenizer(in.readLine().trim());
 		for (int i = 0; i < m; i++) {
-			System.out.print(bs(0, arr.length, Integer.parseInt(x.nextToken())) + " ");
+			out.write(bs(0, arr.length, Integer.parseInt(x.nextToken())) + " ");
 		}
 		out.close();
 	}
