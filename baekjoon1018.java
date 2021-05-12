@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class baekjoon1018 {
-	static int m,n;
+	static int m, n;
 	static String[] input;
 	static final String[] whitestart = { "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW", "WBWBWBWB", "BWBWBWBW",
 			"WBWBWBWB", "BWBWBWBW" };
@@ -15,10 +15,10 @@ public class baekjoon1018 {
 	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		n = Integer.parseInt(st.nextToken());
 		m = Integer.parseInt(st.nextToken());
-		
+
 		input = new String[n];
 		for (int i = 0; i < n; i++)
 			input[i] = br.readLine();
@@ -28,9 +28,9 @@ public class baekjoon1018 {
 		int min1 = Integer.MAX_VALUE;
 		int min2 = Integer.MAX_VALUE;
 
-		for (int i = 0; i < m - 7; i++) { // 행
-			for (int j = 0; j < n - 7; j++) { //열
-				for (int k = j; k < j + 8; k++) { // 열 8칸
+		for (int i = 0; i < m - 7; i++) {
+			for (int j = 0; j < n - 7; j++) {
+				for (int k = j; k < j + 8; k++) {
 					String line = input[k].substring(i, i + 8);
 					if (!input.equals(whitestart[k - j])) {
 						for (int l = i; l < i + 8; l++) {
