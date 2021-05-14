@@ -22,7 +22,6 @@ public class baekjoon10828 {
 				else
 					System.out.println(-1);
 				break;
-
 			case "size":
 				System.out.println(stack.size());
 				break;
@@ -38,7 +37,6 @@ public class baekjoon10828 {
 				else
 					System.out.println(-1);
 				break;
-
 			}
 		}
 		br.close();
