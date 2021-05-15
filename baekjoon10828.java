@@ -17,7 +17,7 @@ public class baekjoon10828 {
 				stack.push(Integer.parseInt(st.nextToken()));
 				break;
 			case "pop":
-				if (!stack.empty())
+				if (!stack.isEmpty())
 					System.out.println(stack.pop());
 				else
 					System.out.println(-1);
@@ -26,13 +26,13 @@ public class baekjoon10828 {
 				System.out.println(stack.size());
 				break;
 			case "empty":
-				if (!stack.empty())
+				if (!stack.isEmpty())
 					System.out.println(0);
 				else
 					System.out.println(1);
 				break;
 			case "top":
-				if (!stack.empty())
+				if (!stack.isEmpty())
 					System.out.println(stack.peek());
 				else
 					System.out.println(-1);
