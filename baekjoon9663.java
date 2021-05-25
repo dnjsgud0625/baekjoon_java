@@ -4,12 +4,10 @@ import java.util.*;
 
 public class baekjoon9663 {
 	static int n, cnt = 0;
-	static int[] arr;
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt();
-		sc.close();
 
 		for (int i = 1; i <= n; i++) {
 			int[] col = new int[n + 1];
@@ -17,6 +15,7 @@ public class baekjoon9663 {
 			nqueen(col, 1);
 		}
 		System.out.println(cnt);
+		sc.close();
 	}
 
 	public static void nqueen(int[] col, int row) {
